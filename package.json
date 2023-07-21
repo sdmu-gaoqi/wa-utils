@@ -19,6 +19,7 @@
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
     "prepublishOnly": "father doctor && npm run build",
+    "pub": "yarn publish --registry=https://registry.npmjs.org/.",
     "start": "npm run dev"
   },
   "commitlint": {
@@ -46,6 +47,7 @@
   "dependencies": {
     "@types/js-cookie": "^3.0.3",
     "@types/uuid": "^9.0.2",
+    "axios": "^1.4.0",
     "copy-to-clipboard": "^3.3.3",
     "dayjs": "^1.11.9",
     "eventemitter3": "^5.0.1",
