@@ -20,7 +20,7 @@ interface RequestOption extends CreateAxiosDefaults {
   baseUrl: string;
 }
 
-export class request {
+class request {
   instence: AxiosInstance;
   constructor(option: RequestOption) {
     const { baseUrl, timeout = 5000 } = option;
@@ -33,3 +33,5 @@ export class request {
     });
   }
 }
+
+export default request;
