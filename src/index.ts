@@ -1,8 +1,11 @@
+// import nanoid from 'nanoid';
+
 export { default as copy } from 'copy-to-clipboard';
 export { default as cloneDeep } from 'lodash/cloneDeep';
 export { default as debounce } from 'lodash/debounce';
+export { default as isEmpty } from 'lodash/isEmpty';
+export { default as isEqual } from 'lodash/isEqual';
 export { default as throttle } from 'lodash/throttle';
-export { default as nanoid } from 'nanoid';
 export { default as AudioController } from './audio/audio';
 export { default as request } from './axios/axios';
 export { default as clientRect } from './clientRect/clientRect';
@@ -19,3 +22,4 @@ export { default as sleep } from './sleep/sleep';
 export { default as smoothScrollTo } from './smoothScrollTo/smoothScrollTo';
 export { default as Storage } from './storage/storage';
 export { default as timestamp } from './timestamp/timestamp';
+// export { nanoid };
