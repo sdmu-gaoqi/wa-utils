@@ -12,6 +12,7 @@ export { default as Request } from './axios/axios';
 export type { RequestOption } from './axios/axios';
 export { default as clientRect } from './clientRect/clientRect';
 export { default as cookie } from './cookie/cookie';
+export { default as debug } from './debug/debug';
 export { default as eventemitter } from './eventemitter/eventemitter';
 export { off, on } from './eventListener/eventListener';
 export { default as fileOpts } from './file/file';
