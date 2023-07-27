@@ -17,13 +17,13 @@ class AudioController {
       this.audio.play();
     } else {
       this.audio = new Audio(this.src);
-      this.audio.onload = () => {
-        if (this.audio) {
-          this.audio.play();
-        }
-      };
       this.audio.onerror = (err) => {
         console.log(`音频播放失败 ${err}`);
+      };
+      this.audio.oncanplay = () => {
+        if ((this, this.audio)) {
+          this.audio.play();
+        }
       };
     }
   }
