@@ -22,6 +22,9 @@ class AudioController {
           this.audio.play();
         }
       };
+      this.audio.onerror = (err) => {
+        console.log(`音频播放失败 ${err}`);
+      };
     }
   }
   pause() {
