@@ -1,4 +1,4 @@
-const clientRect = (dom: any) => {
+const clientRect = (dom: HTMLElement): DOMRect | null => {
   if (!dom) {
     return null;
   }

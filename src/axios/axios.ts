@@ -16,7 +16,7 @@ const defaultHeads: RawAxiosRequestHeaders | AxiosHeaders = {
   'Content-Type': RequestType.json,
 };
 
-interface RequestOption extends CreateAxiosDefaults {
+export interface RequestOption extends CreateAxiosDefaults {
   baseUrl: string;
 }
 

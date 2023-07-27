@@ -1,4 +1,4 @@
-interface AudioOptions {
+export interface AudioOptions {
   src: string;
 }
 
