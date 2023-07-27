@@ -1,4 +1,4 @@
-import safeJson from 'waUtils/safeJson/safeJson';
+import { safeJson } from '../index';
 
 class _Storage {
   storage: Storage;

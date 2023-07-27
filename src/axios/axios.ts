@@ -20,7 +20,7 @@ interface RequestOption extends CreateAxiosDefaults {
   baseUrl: string;
 }
 
-class request {
+class Request {
   instence: AxiosInstance;
   constructor(option: RequestOption) {
     const { baseUrl, timeout = 5000 } = option;
@@ -31,7 +31,12 @@ class request {
         ...defaultHeads,
       },
     });
+    // this.instence.interceptors.response.use((res) => {
+    //   // 默认的
+    // });
   }
 }
 
-export default request;
+// interceptors.response.use
+
+export default Request;

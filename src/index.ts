@@ -7,7 +7,7 @@ export { default as isEmpty } from 'lodash/isEmpty';
 export { default as isEqual } from 'lodash/isEqual';
 export { default as throttle } from 'lodash/throttle';
 export { default as AudioController } from './audio/audio';
-export { default as request } from './axios/axios';
+export { default as Request } from './axios/axios';
 export { default as clientRect } from './clientRect/clientRect';
 export { default as cookie } from './cookie/cookie';
 export { default as eventemitter } from './eventemitter/eventemitter';
