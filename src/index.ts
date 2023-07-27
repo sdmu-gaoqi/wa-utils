@@ -19,6 +19,7 @@ export { default as fullscreen } from './fullscreen/fullscreen';
 export { injectionScript, injectionStyle } from './injection/injection';
 export type { ScriptOption, styleOption } from './injection/injection';
 export { default as openTab } from './openTab/openTab';
+export { default as regexs } from './regex/regex';
 export { default as ResizeListener } from './resizeObserver/resizeObserver';
 export { default as safeJson } from './safeJson/safeJson';
 export { default as sleep } from './sleep/sleep';
