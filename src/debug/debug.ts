@@ -1,3 +1,3 @@
 import VConsole from 'vconsole';
 
-new VConsole();
+export default VConsole;
