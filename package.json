@@ -18,6 +18,7 @@
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
+    "prepublishOnly": "father doctor && npm run build",
     "pub": "npm publish --registry=https://registry.npmjs.org/.",
     "start": "npm run dev"
   },
