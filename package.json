@@ -19,7 +19,7 @@
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
     "prepublishOnly": "father doctor && npm run build",
-    "pub": "yarn publish --registry=https://registry.npmjs.org/.",
+    "pub": "npm publish --registry=https://registry.npmjs.org/.",
     "start": "npm run dev"
   },
   "commitlint": {
