@@ -20,8 +20,8 @@ jobs:
           node-version: 16
           cache: 'yarn'
       - run: yarn
-      - run: yarn run build
-      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+      # - run: yarn run build
+      # - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
