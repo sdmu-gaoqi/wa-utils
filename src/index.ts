@@ -5,6 +5,7 @@ export { default as cloneDeep } from 'lodash/cloneDeep';
 export { default as debounce } from 'lodash/debounce';
 export { default as isEmpty } from 'lodash/isEmpty';
 export { default as isEqual } from 'lodash/isEqual';
+export { default as isObject } from 'lodash/isObject';
 export { default as throttle } from 'lodash/throttle';
 export { default as AudioController } from './audio/audio';
 export type { AudioOptions } from './audio/audio';
