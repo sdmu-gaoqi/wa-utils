@@ -32,4 +32,5 @@ export { default as smoothScrollTo } from './smoothScrollTo/smoothScrollTo';
 export type { SmoothScrollToOptions } from './smoothScrollTo/smoothScrollTo';
 export { default as Storage } from './storage/storage';
 export { default as timestamp } from './timestamp/timestamp';
+export { getParameterByName } from './url/url';
 export { default as uuid } from './uuid/uuid';
