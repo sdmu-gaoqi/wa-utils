@@ -15,3 +15,10 @@ export const formatMoney = (value: number, decimal = 2, thousands = false) => {
       : `${formattedValue}${decimalStr}`;
   }
 };
+
+export const formatDiscount = (value: number) => {
+  if (!Number(value)) {
+    return '';
+  }
+  return `${(Number(value) / 10).toFixed(1)}折`;
+};
