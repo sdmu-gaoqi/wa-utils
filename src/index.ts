@@ -16,7 +16,7 @@ export { default as debug } from './debug/debug';
 export { default as eventemitter } from './eventemitter/eventemitter';
 export { off, on } from './eventListener/eventListener';
 export { default as fileOpts } from './file/file';
-export { formatMoney } from './format/format';
+export { formatDiscount, formatMoney } from './format/format';
 export { default as fullscreen } from './fullscreen/fullscreen';
 export { injectionScript, injectionStyle } from './injection/injection';
 export type { ScriptOption, styleOption } from './injection/injection';
