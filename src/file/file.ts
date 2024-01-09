@@ -131,6 +131,11 @@ export const filetoBase64 = (file: any): Promise<any> => {
   });
 };
 
+export const getFileExt = (fileName: string) => {
+  let ext = fileName.split('.').at(-1) || '';
+  return ext;
+};
+
 const fileOpts = {
   dataURLtoFile,
   base64toFile,
@@ -138,6 +143,7 @@ const fileOpts = {
   base64toBlob,
   blobtoFile,
   filetoBase64,
+  getFileExt,
 };
 
 export default fileOpts;
