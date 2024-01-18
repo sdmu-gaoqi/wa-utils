@@ -8,9 +8,6 @@ group:
 
 # AudioController - 音频播放
 
-```typescript
-import { AudioController } from 'wa-utils';
+## 示例
 
-const audio = new AudioController({ src: 'http://??????' });
-audio.play();
-```
+<code src="./demo/index.tsx"></code>

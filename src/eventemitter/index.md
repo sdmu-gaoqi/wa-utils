@@ -12,3 +12,5 @@ group:
 import { eventemitter } from 'wa-utils';
 // 用法参考eventemitter3
 ```
+
+https://www.npmjs.com/package/eventemitter3
