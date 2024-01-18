@@ -6,7 +6,7 @@ group:
   title: 工具函数
 ---
 
-# fullscreen
+# Storage 更方便的 storage 操作 自带时间戳标识
 
 ```typescript
 import { Storage } from 'wa-utils';

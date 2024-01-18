@@ -6,7 +6,7 @@ group:
   title: 工具函数
 ---
 
-# fullscreen
+# smoothScrollTo 以更平滑的方式滚动元素
 
 ```typescript
 import { smoothScrollTo } from 'wa-utils';

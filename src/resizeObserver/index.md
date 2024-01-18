@@ -6,7 +6,7 @@ group:
   title: 工具函数
 ---
 
-# fullscreen
+# ResizeListener 元素改变监听器
 
 ```typescript
 import { ResizeListener } from 'wa-utils';

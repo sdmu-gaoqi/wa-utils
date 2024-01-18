@@ -1,7 +1,7 @@
 interface ListenProps {
   target: HTMLElement;
   onSuccess: () => void;
-  onError: () => void;
+  onError?: () => void;
 }
 
 const fullscreen = {
@@ -30,7 +30,7 @@ const fullscreen = {
     }
   },
   listenTarget: (props: ListenProps) => {
-    const { target, onSuccess, onError } = props;
+    const { target, onSuccess, onError = () => {} } = props;
     if (!target) {
       return;
     }
