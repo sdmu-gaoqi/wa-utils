@@ -7,11 +7,3 @@ group:
 ---
 
 <code src="./demo.tsx" inline></code>
-
-<!-- # district - 免费的地域 api -->
-
-<!-- ```typescript
-import { District } from 'wa-utils';
-
-const district = new District();
-``` -->

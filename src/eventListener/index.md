@@ -6,7 +6,7 @@ group:
   title: 工具函数
 ---
 
-# eventemitter
+# eventListener
 
 ```typescript
 import { on, off } from 'wa-utils';
