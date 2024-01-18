@@ -6,13 +6,13 @@ group:
   title: 工具函数
 ---
 
-# fullscreen
+# sleep
 
 ```typescript
 import { sleep } from 'wa-utils';
 
-function() {
-    sleep()
-    console.log('执行')
-}
+const fn = async () => {
+  await sleep(1000);
+  console.log('执行');
+};
 ```

@@ -11,10 +11,10 @@ group:
 ```typescript
 import { download } from 'wa-utils';
 
-download.downloadTxt;
-download.downloadBlob;
-download.downloadFileFromUrl;
-download.downloadExcel;
-download.downloadCsv;
-download.downloadJson;
+download.downloadTxt; // 以txt文本方式下载
+download.downloadBlob; // 以blob格式下载文件
+download.downloadFileFromUrl; // 从url地址下载
+download.downloadExcel; // list转excel下载
+download.downloadCsv; // list转csv下载
+download.downloadJson; // 数据转json文件下载
 ```

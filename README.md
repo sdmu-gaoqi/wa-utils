@@ -1,40 +1,15 @@
-# waUtils
+# 工具函数库
 
-[![NPM version](https://img.shields.io/npm/v/waUtils.svg?style=flat)](https://npmjs.org/package/waUtils)
-[![NPM downloads](http://img.shields.io/npm/dm/waUtils.svg?style=flat)](https://npmjs.org/package/waUtils)
+## 一些开发过程中遇到的反复封装可重复使用的基础函数
 
-A react library developed with dumi
+## 如何使用
 
-## Usage
+```typescript
+1. 安装
+npm i wa-utils
+or
+yarn add wa-utils
 
-TODO
-
-## Options
-
-TODO
-
-## Development
-
-```bash
-# install dependencies
-$ yarn install
-
-# develop library by docs demo
-$ yarn start
-
-# build library source code
-$ yarn run build
-
-# build library source code in watch mode
-$ yarn run build:watch
-
-# build docs
-$ yarn run docs:build
-
-# check your project for potential problems
-$ yarn run doctor
+2. 使用
+import { *** } from 'wa-utils'
 ```
-
-## LICENSE
-
-MIT

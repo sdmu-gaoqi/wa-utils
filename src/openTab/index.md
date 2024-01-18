@@ -6,7 +6,7 @@ group:
   title: 工具函数
 ---
 
-# fullscreen
+# openTab 以 tab 小窗口方式新开页面
 
 ```typescript
 import { openTab } from 'wa-utils';

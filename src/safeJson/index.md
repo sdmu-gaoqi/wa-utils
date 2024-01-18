@@ -6,7 +6,7 @@ group:
   title: 工具函数
 ---
 
-# fullscreen
+# safeJson 安全的 json 操作
 
 ```typescript
 import { safeJson } from 'wa-utils';
