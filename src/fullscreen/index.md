@@ -3,7 +3,7 @@ title: fullscreen
 toc: false
 order: -1
 group:
-  title: 工具函数
+  title: 浏览器
 ---
 
 # fullscreen 全屏函数

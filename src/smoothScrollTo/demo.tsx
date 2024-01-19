@@ -6,6 +6,7 @@ const Demo = () => {
     <div
       style={{
         overflow: 'hidden auto',
+        height: '50vh',
       }}
       id="testBox"
     >

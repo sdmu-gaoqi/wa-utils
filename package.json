@@ -1,6 +1,6 @@
 {
   "name": "wa-utils",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "一些常用的工具函数集合",
   "license": "MIT",
   "module": "dist/index.js",
@@ -45,10 +45,12 @@
     ]
   },
   "dependencies": {
+    "@types/crypto-js": "^4.2.1",
     "@types/js-cookie": "^3.0.3",
     "@types/uuid": "^9.0.2",
     "axios": "^1.4.0",
     "copy-to-clipboard": "^3.3.3",
+    "crypto-js": "^4.2.0",
     "dayjs": "^1.11.9",
     "eventemitter3": "^5.0.1",
     "js-cookie": "^3.0.5",

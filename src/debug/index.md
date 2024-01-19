@@ -3,7 +3,7 @@ title: debug
 toc: false
 order: -1
 group:
-  title: 工具函数
+  title: 浏览器
 ---
 
 # debug - 调试工具

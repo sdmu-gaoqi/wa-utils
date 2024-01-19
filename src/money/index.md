@@ -1,9 +1,9 @@
 ---
-title: file
+title: formatMoney
 toc: false
 order: -1
 group:
-  title: 格式化展示相关
+  title: 数据处理
 ---
 
 # formatMoney 金币格式工具
