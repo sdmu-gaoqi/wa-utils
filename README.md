@@ -13,3 +13,6 @@ yarn add wa-utils
 2. 使用
 import { *** } from 'wa-utils'
 ```
+
+访问地址
+http://111.229.138.125/utils/index.html
