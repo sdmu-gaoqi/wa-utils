@@ -15,4 +15,4 @@ import { *** } from 'wa-utils'
 ```
 
 访问地址
-http://111.229.138.125/utils/index.html
+http://111.229.138.125/utils/guide

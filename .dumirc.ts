@@ -5,6 +5,6 @@ export default defineConfig({
   themeConfig: {
     name: 'waUtils',
   },
-  base: 'http://111.229.138.125/utils/',
-  publicPath: 'http://111.229.138.125/utils/',
+  base: '/utils/',
+  publicPath: '/utils/',
 });
