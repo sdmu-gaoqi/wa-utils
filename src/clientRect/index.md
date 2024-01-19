@@ -8,8 +8,6 @@ group:
 
 # clientRect - 获取位置信息
 
-```typescript
-import { clientRect } from 'wa-utils';
+## 示例
 
-const position = clientRect(document.body);
-```
+<code src="./demo/index.tsx"></code>

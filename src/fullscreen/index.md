@@ -13,3 +13,5 @@ import { fullscreen } from 'wa-utils';
 
 fullscreen.to();
 ```
+
+<code src="./demo/index.tsx"></code>

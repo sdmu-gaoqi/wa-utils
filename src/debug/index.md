@@ -8,8 +8,6 @@ group:
 
 # debug - 调试工具
 
-```typescript
-import { debug } from 'wa-utils';
+## 示例
 
-debug();
-```
+<code src="./demo/index.tsx"></code>

@@ -1,20 +1,15 @@
 ---
-title: clientRect
+title: download
 toc: false
 order: -1
 group:
-  title: 工具函数
+  title: 文件相关
 ---
 
 # clientRect - 下载相关
 
+<code src="./demo.tsx" inline></code>
+
 ```typescript
 import { download } from 'wa-utils';
-
-download.downloadTxt;
-download.downloadBlob;
-download.downloadFileFromUrl;
-download.downloadExcel;
-download.downloadCsv;
-download.downloadJson;
 ```

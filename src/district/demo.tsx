@@ -1,7 +1,6 @@
+import React from 'react';
 import District from './district';
 
 const district = new District();
 
-console.log(district, 'district');
-
-export default () => null;
+export default () => <div>{JSON.stringify(district)}</div>;

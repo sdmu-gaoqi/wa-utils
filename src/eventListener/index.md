@@ -1,15 +1,15 @@
 ---
-title: eventemitter
+title: eventListener
 toc: false
 order: -1
 group:
   title: 工具函数
 ---
 
-# eventemitter
+# eventListener 事件监听注册器
 
 ```typescript
 import { on, off } from 'wa-utils';
-
-on(document.getElementById('??????'), 'click', function)
 ```
+
+<code src="./demo.tsx" inline></code>

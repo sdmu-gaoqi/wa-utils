@@ -6,10 +6,10 @@ group:
   title: 工具函数
 ---
 
-# fullscreen
+# joinCss 类名拼接函数
 
 ```typescript
 import { joinCss } from 'wa-utils';
 
-joinCss('wa', 'wrapper');
+joinCss('wa', ['wrapper', 'test']); // 'wa-wrapper wa-test'
 ```
