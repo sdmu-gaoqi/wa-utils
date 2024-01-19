@@ -12,4 +12,4 @@ group:
 import { on, off } from 'wa-utils';
 ```
 
-<code src="./demo.tsx" inline></code>
+<code src="./demo/index.tsx" inline></code>
