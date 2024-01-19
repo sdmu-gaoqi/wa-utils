@@ -11,5 +11,12 @@ group:
 ```typescript
 import { smoothScrollTo } from 'wa-utils';
 
-smoothScrollTo(0);
+/**
+ * @param { number } distance 滑动距离
+ * @param {{ duration?: number; isHorizontal?: boolean; target?: any }} options
+ * @description duration 持续时间 isHorizontal 是否时水平滚动 target目标元素 默认是body
+ * */
+smoothScrollTo();
 ```
+
+<code src="./demo.tsx" inline></code>

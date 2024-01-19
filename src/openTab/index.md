@@ -6,12 +6,13 @@ group:
   title: 工具函数
 ---
 
-# openTab 以 tab 小窗口方式新开页面
+# openTab 内置了小屏幕打开 tab 的操作
 
 ```typescript
 import { openTab } from 'wa-utils';
 
-openTab({
-  url: '??????',
-});
+/**
+ * @param {{ url: strin; tagType: 'default' | 'small' }} props
+ * */
+openTab();
 ```

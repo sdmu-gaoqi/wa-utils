@@ -8,8 +8,11 @@ const downloadTxt = (filename: string, content: string) => {
   );
   domA.setAttribute('download', filename);
   if (window.Event) {
-    const event = new Event('click', { bubbles: true, cancelable: true });
-    domA.dispatchEvent(event);
+    // const event = new Event('click', { bubbles: true, cancelable: true })
+    const evt = document.createEvent('MouseEvents');
+    evt.initEvent('click', false, false);
+    // initEvent 还在生效 弃用时再使用Event 现在Event还不完全生效
+    domA.dispatchEvent(evt);
   } else {
     domA.click();
   }

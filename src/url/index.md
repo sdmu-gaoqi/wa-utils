@@ -10,7 +10,10 @@ group:
 
 ```typescript
 import { getParameterByName } from 'wa-utils';
-// http://localhost:5173/?storeHeadquartersCode=103&storeCode=S01#/project/add?id=1
-getParameterByName('storeHeadquartersCode'); // 103
-getParameterByName('id', true); // 1
+
+/**
+ * @param { string } key
+ * @param { boolean } isHash 是否是hash的参数
+ * */
+getParameterByName();
 ```

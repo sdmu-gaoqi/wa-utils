@@ -1,7 +1,7 @@
 {
   "name": "wa-utils",
-  "version": "0.2.6",
-  "description": "A react library developed with dumi",
+  "version": "0.3.0",
+  "description": "一些常用的工具函数集合",
   "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
