@@ -11,6 +11,7 @@ class AudioController {
   }
   changeUrl(url: string) {
     this.src = url;
+    this.audio?.setAttribute('src', url);
   }
   play() {
     if (this.audio) {

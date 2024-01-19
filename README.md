@@ -4,7 +4,7 @@
 
 ## 如何使用
 
-```typescript
+```sh
 1. 安装
 npm i wa-utils
 or

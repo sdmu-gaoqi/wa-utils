@@ -1,11 +1,20 @@
-import React from 'react';
-import { on } from 'wa-utils';
+import React, { useEffect } from 'react';
+import { off, on } from '../eventListener';
 
 const Demo = () => {
-  const _debug = new debug();
+  useEffect(() => {
+    on(document.querySelector('#demoButtn'), 'click', () => {
+      console.log('button点击了');
+    });
+    return () => {
+      off(document.querySelector('#demoButtn'), 'click', () => {
+        console.log('button点击了');
+      });
+    };
+  }, []);
   return (
-    <button type="button" onClick={() => on(document.body, )}>
-      注册点击监听
+    <button type="button" id="demoButtn">
+      点击
     </button>
   );
 };

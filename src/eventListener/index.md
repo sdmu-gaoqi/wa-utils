@@ -10,6 +10,6 @@ group:
 
 ```typescript
 import { on, off } from 'wa-utils';
-
-on(document.getElementById('test'), 'click', function)
 ```
+
+<code src="./demo.tsx" inline></code>

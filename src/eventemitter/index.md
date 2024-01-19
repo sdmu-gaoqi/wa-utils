@@ -9,8 +9,10 @@ group:
 # eventemitter
 
 ```typescript
-import { eventemitter } from 'wa-utils';
-// 用法参考eventemitter3
+/**
+ * @see https://www.npmjs.com/package/eventemitter3
+ * @description 用法参考eventemitter3
+ * */
 ```
 
-https://www.npmjs.com/package/eventemitter3
+<code src="./demo.tsx" inline></code>
