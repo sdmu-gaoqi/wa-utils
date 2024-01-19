@@ -3,7 +3,7 @@ title: format
 toc: false
 order: -1
 group:
-  title: 格式化展示相关
+  title: 数据处理
 ---
 
 # format 格式化渲染函数
