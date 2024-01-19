@@ -1,5 +1,5 @@
 ---
-title: fullscreen
+title: injectionScript
 toc: false
 order: -1
 group:
