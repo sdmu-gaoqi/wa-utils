@@ -12,6 +12,8 @@ group:
 import { fullscreen } from 'wa-utils';
 
 fullscreen.to();
+fullscreen.exit();
+fullScreen.status(); // 获取全屏状态
 ```
 
 <code src="./demo/index.tsx"></code>
