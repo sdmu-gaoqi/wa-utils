@@ -14,7 +14,7 @@ jobs:
           always-auth: true
           node-version: 16
           cache: 'yarn'
-      - run: echo "git提交事件:${{ toJson(github.event) }}"
+      - run: echo "git提交事件:${{ toJson(github) }}"
       - run: yarn
       - run: yarn run build
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
