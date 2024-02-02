@@ -14,7 +14,7 @@ jobs:
           always-auth: true
           node-version: 16
           cache: 'yarn'
-      - run: echo "git提交元数据:${{ toJson(github.event.base) }}"
+      - run: echo "git提交元数据:${{ toJson(github.event) }}"
       - run: echo "git提交信息:${{ toJson(github.event.base) }}"
       - run: yarn
       - run: yarn run build
