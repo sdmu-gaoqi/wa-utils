@@ -10,6 +10,11 @@ group:
 
 ```typescript
 import { on, off } from 'wa-utils';
+
+const clickFn = () => {};
+
+on(document.body, 'click', clickFn);
+off(document.body, 'click', clickFn);
 ```
 
 <code src="./demo/index.tsx" inline></code>

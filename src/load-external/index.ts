@@ -113,11 +113,8 @@ const loadExternal = (path: string, props: LoadProps = {}, remove = false) => {
   const pathname = path.replace(/[|#].*$/, '');
   if (/(^css!|\.css$)/.test(pathname)) {
     return loadCss(path, props || {}, remove);
-  } else if (/(^js!|\.js$)/.test(pathname)) {
-    return loadScript(path, props || {}, remove);
   } else {
-    // do nothing
-    return Promise.reject('Path not matched');
+    return loadScript(path, props || {}, remove);
   }
 };
 

@@ -7,6 +7,7 @@ export default () => {
       console.log('我点击了');
     });
   }, []);
+
   return (
     <button
       type="button"
