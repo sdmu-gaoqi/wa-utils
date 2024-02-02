@@ -22,7 +22,8 @@
     "prepublishOnly": "father doctor && npm run build",
     "pub": "npm publish --registry=https://registry.npmjs.org/.",
     "release": "release-it",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "tag": "standard-version"
   },
   "commitlint": {
     "extends": [
@@ -58,6 +59,7 @@
     "js-cookie": "^3.0.5",
     "lodash": "^4.17.21",
     "nanoid": "^4.0.2",
+    "standard-version": "^9.5.0",
     "vconsole": "^3.15.1",
     "xlsx": "^0.18.5"
   },
