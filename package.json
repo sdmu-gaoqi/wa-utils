@@ -21,6 +21,7 @@
     "prepare": "husky install && dumi setup",
     "prepublishOnly": "father doctor && npm run build",
     "pub": "npm publish --registry=https://registry.npmjs.org/.",
+    "release": "release-it",
     "start": "npm run dev"
   },
   "commitlint": {
@@ -63,6 +64,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@release-it/conventional-changelog": "^6.0.0",
     "@types/lodash": "^4.14.191",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
@@ -77,6 +79,7 @@
     "prettier-plugin-packagejson": "^2.2.18",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "release-it": "^16.1.3",
     "stylelint": "^14.9.1"
   },
   "peerDependencies": {
