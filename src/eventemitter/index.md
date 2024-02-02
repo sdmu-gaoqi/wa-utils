@@ -16,3 +16,18 @@ group:
 ```
 
 <code src="./demo.tsx" inline></code>
+
+```typescript
+// a.js
+import eventemitter from './eventemitter';
+
+eventemitter.on('outletClick', (data) => {
+  console.log(data, 'aaaaaa');
+});
+```
+
+```typescript
+document.body.addEventListener('click', () => {
+  eventemitter.emit('outletClick', { data: 'outlet' });
+});
+```

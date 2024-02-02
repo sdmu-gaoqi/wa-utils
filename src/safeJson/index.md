@@ -12,4 +12,5 @@ group:
 import { safeJson } from 'wa-utils';
 
 safeJson.stringify({});
+safeJson.parse({});
 ```

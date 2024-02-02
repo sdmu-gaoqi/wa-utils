@@ -34,7 +34,6 @@ export type { ScriptOption, styleOption } from './injection/injection';
 export { default as isNumber } from './is-number';
 export { default as joinCss } from './joinCss/joinCss';
 export { default as loadExternal } from './load-external';
-export * from './money/money';
 export { default as obj2url } from './obj2url';
 export { default as openTab } from './openTab/openTab';
 export { default as registerPageHidden } from './page-hidden';

@@ -15,5 +15,5 @@ import { getParameterByName } from 'wa-utils';
  * @param { string } key
  * @param { boolean } isHash 是否是hash的参数
  * */
-getParameterByName();
+getParameterByName('id', false);
 ```

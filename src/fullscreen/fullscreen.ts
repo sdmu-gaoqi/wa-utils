@@ -38,14 +38,14 @@ const fullscreen = {
     target.onfullscreenerror = onError;
   },
   status: () => {
-    const dom = document as any
+    const dom = document as any;
     return (
       (dom?.fullscreenElement && dom?.fullscreenElement !== null) ||
       (dom?.webkitFullscreenElement && dom?.webkitFullscreenElement !== null) ||
       (dom?.mozFullScreenElement && dom?.mozFullScreenElement !== null) ||
       (dom?.msFullscreenElement && dom?.msFullscreenElement !== null)
     );
-  }
+  },
 };
 
 export default fullscreen;
