@@ -15,7 +15,9 @@ jobs:
           node-version: 16
           cache: 'yarn'
       - run: echo "git提交标题:${{ toJson(github.event.pull_request.title) }}"
-      - run: echo "git提交内容:${{ toJson(github.event.pull_request.commits) }}"
+      - run: echo "git commits:${{ toJson(github.event.pull_request.commits) }}"
+      - run: echo "git comments:${{ toJson(github.event.pull_request.comments) }}"
+      - run: echo "git body:${{ toJson(github.event.pull_request.body) }}"
       - run: yarn
       - run: yarn run build
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
