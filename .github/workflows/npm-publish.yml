@@ -16,7 +16,7 @@ jobs:
           always-auth: true
           node-version: 16
           cache: 'yarn'
-      - name: git config
+      - name: 设置git config信息
         run: |
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
@@ -26,12 +26,14 @@ jobs:
       - run: echo "git body:${{ toJson(github.event.pull_request.body) }}"
       - run: echo ${{github.event.pull_request.title}} | sed ''s/release://''
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-      - name: git branch
+      - name: 切换到被合并分支
         run: |
           git fetch --all
           git checkout ${{github.event.pull_request.base.ref}}
       - run: yarn
       - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
+      - name: release更新日志记录发布
+        run: git push
 
         # - run: yarn run build
         # - run: npm publish --tag ${{github.event.pull_request.title}} | sed ''s/release://''
