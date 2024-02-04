@@ -19,8 +19,8 @@ jobs:
       - run: echo "git提交标题:${{ toJson(github.event.pull_request.title) }}"
       - run: echo "git body:${{ toJson(github.event.pull_request.body) }}"
       - run: echo ${{github.event.pull_request.title}} | sed ''s/release://''
+      - run: yarn
       - run: yarn run release ${{github.event.pull_request.title}} | sed ''s/release://''
-        # - run: yarn
         # - run: yarn run build
         # - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
         # - run: npm publish --tag ${{github.event.pull_request.title}} | sed ''s/release://''
