@@ -16,6 +16,10 @@ jobs:
           always-auth: true
           node-version: 16
           cache: 'yarn'
+      - name: git config
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
       - run: echo "git提交标题:${{ toJson(github.event.pull_request.title) }}"
       - run: echo "git body:${{ toJson(github.event.pull_request.body) }}"
       - run: echo ${{github.event.pull_request.title}} | sed ''s/release://''
