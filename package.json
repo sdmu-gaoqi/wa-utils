@@ -1,6 +1,6 @@
 {
   "name": "wa-utils",
-  "version": "0.4.0",
+  "version": "0.3.3",
   "description": "一些常用的工具函数集合",
   "license": "MIT",
   "module": "dist/index.js",
@@ -21,7 +21,7 @@
     "prepare": "husky install && dumi setup",
     "prepublishOnly": "father doctor && npm run build",
     "pub": "npm publish --registry=https://registry.npmjs.org/.",
-    "release": "release-it --only-version",
+    "release": "release-it --ci",
     "start": "npm run dev",
     "tag": "standard-version"
   },
