@@ -1,15 +1,13 @@
 name: Publish Package to npmjs
 
 on:
-  # pull_request:
-  #   branches: [test]
-  push:
-    branches: [dev]
+  pull_request:
+    branches: [test]
 
 # 使用正式版本测一下
 jobs:
   build:
-    # if: startsWith(github.event.pull_request.title, 'release:')
+    if: startsWith(github.event.pull_request.title, 'release:')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
