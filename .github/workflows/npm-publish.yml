@@ -33,7 +33,7 @@ jobs:
       - run: yarn
       - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
       - name: release更新日志记录发布
-        run: git push
+        run: git push ${{secrets.UTILS_TOKEN}}
 
         # - run: yarn run build
         # - run: npm publish --tag ${{github.event.pull_request.title}} | sed ''s/release://''
