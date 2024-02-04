@@ -23,20 +23,19 @@ jobs:
       - run: echo "git提交标题:${{ toJson(github.event.pull_request.title) }}"
       - run: echo "git提交内容:${{ toJson(github.event.pull_request.body) }}"
       - run: echo "git仓库地址:${{ toJson(github.event.repository.full_name) }}"
-      - run: echo "git body:${{ toJson(github.event.pull_request.body) }}"
-        # - run: echo ${{github.event.pull_request.title}} | sed ''s/release://''
-        # - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-        # - name: 切换到被合并分支
-        #   run: |
-        #     git fetch --all
-        #     git checkout ${{github.event.pull_request.base.ref}}
-        # - run: yarn
-        # - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
-        # - name: release更新日志记录发布
-        #   run: |
-        #     git config --global credential.helper ${{secrets.GIT_TOKEN}}
-        #     git remote set-url origin https://${{secrets.GIT_TOKEN}}@github.com/sdmu-gaoqi/
-        #     git push
+      - run: echo ${{github.event.pull_request.title}} | sed ''s/release://''
+      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+      - name: 切换到被合并分支
+        run: |
+          git fetch --all
+          git checkout ${{github.event.pull_request.base.ref}}
+      - run: yarn
+      - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
+      - name: release更新日志记录发布
+        run: |
+          git config --global credential.helper ${{secrets.GIT_TOKEN}}
+          git remote set-url origin https://${{secrets.GIT_TOKEN}}@github.com/${{github.event.repository.full_name}}.git
+          git push
 
         # - run: yarn run build
         # - run: npm publish --tag ${{github.event.pull_request.title}} | sed ''s/release://''
