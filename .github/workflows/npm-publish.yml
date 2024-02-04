@@ -4,6 +4,7 @@ on:
   pull_request:
     branches: [test]
 
+# 使用正式版本测一下
 jobs:
   build:
     if: startsWith(github.event.pull_request.title, 'release:')
