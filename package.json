@@ -21,7 +21,7 @@
     "prepare": "husky install && dumi setup",
     "prepublishOnly": "father doctor && npm run build",
     "pub": "npm publish --registry=https://registry.npmjs.org/.",
-    "release": "release-it",
+    "release": "release-it --ci",
     "start": "npm run dev",
     "tag": "standard-version"
   },
