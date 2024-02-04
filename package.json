@@ -1,6 +1,6 @@
 {
   "name": "wa-utils",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "一些常用的工具函数集合",
   "license": "MIT",
   "module": "dist/index.js",
