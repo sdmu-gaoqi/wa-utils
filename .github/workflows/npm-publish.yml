@@ -34,11 +34,11 @@ jobs:
       - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
       - name: release更新日志记录发布
         run: |
-          git config --global credential.helper ${{secrets.UTILS_TOKEN}}
+          git config --global credential.helper ${{secrets.GIT_TOKEN}}
           git push
 
         # - run: yarn run build
         # - run: npm publish --tag ${{github.event.pull_request.title}} | sed ''s/release://''
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-          GITHUB_TOKEN: ${{secrets.UTILS_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GIT_TOKEN}}
