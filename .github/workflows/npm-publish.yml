@@ -22,7 +22,7 @@ jobs:
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
       - run: echo "git提交标题:${{ toJson(github.event.pull_request.title) }}"
       - run: echo "git提交内容:${{ toJson(github.event.pull_request.body) }}"
-      - run: echo "git仓库地址:${{ toJson(github.event.pull_request.url) }}"
+      - run: echo "git仓库地址:${{ toJson(github.event.repository.full_name) }}"
       - run: echo "git body:${{ toJson(github.event.pull_request.body) }}"
         # - run: echo ${{github.event.pull_request.title}} | sed ''s/release://''
         # - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
