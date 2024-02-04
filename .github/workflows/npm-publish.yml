@@ -28,9 +28,9 @@ jobs:
       - run: echo "git仓库地址:${{ toJson(github.event.repository.full_name) }}"
       - run: echo ${{github.event.pull_request.title}} | sed ''s/release://''
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-      - uses: actions/labeler@v4
-        with:
-          repo-token: '${{ secrets.ACTION_TOKEN }}'
+      # - uses: actions/labeler@v4
+      # with:
+      #   repo-token: '${{ secrets.ACTION_TOKEN }}'
       - name: 切换到被合并分支
         run: |
           git fetch --all
