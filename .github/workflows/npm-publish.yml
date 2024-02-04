@@ -28,8 +28,7 @@ jobs:
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       - name: git branch
         run: |
-          git remote -v
-          # git remote add origin https://github.com/sdmu-gaoqi/wa-utils
+          git fetch --all
           git checkout ${{github.event.pull_request.base.ref}}
       - run: yarn
       - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
