@@ -20,12 +20,17 @@ jobs:
         run: |
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+      - run: echo "git提交分支:${{ toJson(github.event.pull_request.head.ref) }}"
       - run: echo "git提交标题:${{ toJson(github.event.pull_request.title) }}"
       - run: echo "git body:${{ toJson(github.event.pull_request.body) }}"
       - run: echo ${{github.event.pull_request.title}} | sed ''s/release://''
-      - run: yarn
+      # - run: yarn
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-      - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
+
+        # - name: git branch
+        #     run: |
+        #     git checkout ${{github.event.pull_request.head.ref}}
+        # - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
         # - run: yarn run build
         # - run: npm publish --tag ${{github.event.pull_request.title}} | sed ''s/release://''
         env:
