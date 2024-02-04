@@ -35,7 +35,7 @@ jobs:
       - name: release更新日志记录发布
         run: |
           git config --global credential.helper ${{secrets.UTILS_TOKEN}}
-          git push ${{secrets.UTILS_TOKEN}}
+          git push
 
         # - run: yarn run build
         # - run: npm publish --tag ${{github.event.pull_request.title}} | sed ''s/release://''
