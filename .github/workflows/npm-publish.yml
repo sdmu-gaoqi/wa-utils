@@ -21,7 +21,7 @@ jobs:
       - run: echo ${{github.event.pull_request.title}} | sed ''s/release://''
       - run: yarn
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-      - run: npm run releas ${{github.event.pull_request.title}} | sed ''s/release://''
+      - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
         # - run: yarn run build
         # - run: npm publish --tag ${{github.event.pull_request.title}} | sed ''s/release://''
         env:
