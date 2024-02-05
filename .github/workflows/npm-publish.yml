@@ -37,8 +37,8 @@ jobs:
           git checkout ${{github.event.pull_request.base.ref}}
       - run: yarn
       - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
-      - name: release更新日志记录发布
-        run: git push
+        # - name: release更新日志记录发布
+        #   run: git push
 
         # - run: yarn run build
         # - run: npm publish --tag ${{github.event.pull_request.title}} | sed ''s/release://''
