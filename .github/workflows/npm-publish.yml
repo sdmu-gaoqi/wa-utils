@@ -35,6 +35,7 @@ jobs:
         run: |
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          # npm ci
       - run: yarn
       - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
         env:

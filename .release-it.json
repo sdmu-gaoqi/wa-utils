@@ -1,7 +1,7 @@
 {
   "github": {
     "release": true,
-    "tokenRef": "ACTION_TOKEN"
+    "tokenRef": "GITHUB_TOKEN"
   },
   "git": {
     "commitMessage": "feat: v${version}",
