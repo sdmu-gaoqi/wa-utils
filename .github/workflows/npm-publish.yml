@@ -22,14 +22,14 @@ jobs:
       - run: echo "git仓库地址:${{ toJson(github.event.repository.full_name) }}"
       - run: echo ${{github.event.pull_request.title}} | sed ''s/release://''
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
       - name: 切换到被合并分支
         run: |
           git fetch --all
           git checkout ${{github.event.pull_request.base.ref}}
           git remote -v
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
       - name: 设置git config信息
         run: |
           git config user.name "${GITHUB_ACTOR}"
