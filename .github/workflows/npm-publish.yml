@@ -34,8 +34,10 @@ jobs:
           git remote -v
       - name: 设置git config信息
         run: |
-          git config user.name "${GITHUB_ACTOR}"
-          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git config user.name "gaoqi"
+          git config user.email "1224362143@qq.com"
+          # git config user.name "${GITHUB_ACTOR}"
+          # git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           # npm ci
       - run: yarn
       - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
