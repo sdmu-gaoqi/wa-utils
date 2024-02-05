@@ -1,9 +1,13 @@
 {
   "github": {
-    "release": true
+    "release": true,
+    "tokenRef": "GITHUB_TOKEN",
+    "releaseName": "release ${version}"
   },
   "git": {
-    "commitMessage": "feat: v${version}"
+    "commitMessage": "feat: v${version}",
+    "commit": true,
+    "push": true
   },
   "npm": {
     "publish": true
