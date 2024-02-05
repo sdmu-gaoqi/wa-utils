@@ -1,8 +1,6 @@
 {
   "github": {
-    "release": true,
-    "tokenRef": "GITHUB_TOKEN",
-    "releaseName": "release ${version}"
+    "release": true
   },
   "git": {
     "commitMessage": "feat: v${version}",
