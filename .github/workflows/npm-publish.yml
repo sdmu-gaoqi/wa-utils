@@ -17,9 +17,6 @@ jobs:
           node-version: 16
           cache: 'yarn'
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
       - name: 切换到被合并分支
         run: |
           git fetch --all
