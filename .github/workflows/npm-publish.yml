@@ -17,7 +17,7 @@ jobs:
           node-version: 16
           cache: 'yarn'
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-      - run: echo "git commit标识 ${{ github.sha }}"
+      - run: echo "git commit hash值：${GITHUB_SHA}"
       - name: 切换到被合并分支
         run: |
           git fetch --all
