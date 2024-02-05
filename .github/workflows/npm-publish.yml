@@ -31,10 +31,10 @@ jobs:
       # - uses: actions/labeler@v4
       # with:
       #   repo-token: '${{ secrets.ACTION_TOKEN }}'
-      - name: 切换到被合并分支
-        run: |
-          git fetch --all
-          git checkout ${{github.event.pull_request.base.ref}}
+      # - name: 切换到被合并分支
+      #   run: |
+      #     git fetch --all
+      #     git checkout ${{github.event.pull_request.base.ref}}
       - run: yarn
       - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
         # - name: 设置登录凭证
