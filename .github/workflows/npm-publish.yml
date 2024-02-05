@@ -9,9 +9,7 @@ jobs:
   build:
     if: startsWith(github.event.pull_request.title, 'release:')
     runs-on: ubuntu-latest
-    # permissions:
-    #   contents: read
-    #   pull-requests: write
+    permissions: write-all
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -40,7 +38,7 @@ jobs:
           # git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           # npm ci
       - run: yarn
-      - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
+      - run: yarn run release ${{github.event.pull_request.title}} | sed ''s/release://''
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           GITHUB_TOKEN: ${{secrets.ACTION_TOKEN}}
