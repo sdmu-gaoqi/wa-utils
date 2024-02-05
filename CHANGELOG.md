@@ -1,3 +1,5 @@
+## [0.3.16](https://github.com/sdmu-gaoqi/wa-utils/compare/v0.3.17...vnull) (2024-02-05)
+
 ## [0.3.15](https://github.com/sdmu-gaoqi/wa-utils/compare/v0.3.5...vnull) (2024-02-05)
 
 ## [0.3.5](https://github.com/sdmu-gaoqi/wa-utils/compare/v0.3.4...v0.3.5) (2024-02-04)
