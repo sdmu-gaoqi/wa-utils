@@ -28,7 +28,7 @@ jobs:
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
       - run: yarn
-      - run: npm run release --git.changelog="git log --grep=${{github.event.pull_request.head.sha}}"
+      - run: npm run release --git.changelog="git log --grep='commit ${{github.event.pull_request.head.sha}}'"
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           GITHUB_TOKEN: ${{secrets.ACTION_TOKEN}}
