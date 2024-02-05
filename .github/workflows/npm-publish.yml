@@ -19,10 +19,6 @@ jobs:
           always-auth: true
           node-version: 16
           cache: 'yarn'
-      # - name: 设置git config信息
-      #   run: |
-      #     git config user.name "${GITHUB_ACTOR}"
-      #     git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
       - run: echo "git提交标题:${{ toJson(github.event.pull_request.title) }}"
       - run: echo "git提交内容:${{ toJson(github.event.pull_request.body) }}"
       - run: echo "git仓库地址:${{ toJson(github.event.repository.full_name) }}"
@@ -35,6 +31,10 @@ jobs:
         run: |
           git fetch --all
           git checkout ${{github.event.pull_request.base.ref}}
+      - name: 设置git config信息
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
       - run: yarn
       - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
         env:
