@@ -9,7 +9,7 @@
     "push": true
   },
   "npm": {
-    "publish": true
+    "publish": false
   },
   "hooks": {
     "after:bump": "echo 更新版本成功"
