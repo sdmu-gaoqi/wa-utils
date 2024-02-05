@@ -37,10 +37,10 @@ jobs:
           git checkout ${{github.event.pull_request.base.ref}}
       - run: yarn
       - run: npm run release ${{github.event.pull_request.title}} | sed ''s/release://''
-      - name: 设置登录凭证
-        run: git config --global credential.helper ${{secrets.ACTION_TOKEN}}
-      - name: release更新日志记录发布
-        run: git push
+        # - name: 设置登录凭证
+        #   run: git config --global credential.helper ${{secrets.ACTION_TOKEN}}
+        # - name: release更新日志记录发布
+        #   run: git push
 
         # - run: yarn run build
         # - run: npm publish --tag ${{github.event.pull_request.title}} | sed ''s/release://''
