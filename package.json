@@ -1,6 +1,6 @@
 {
   "name": "wa-utils",
-  "version": "0.3.4",
+  "version": "0.0.1",
   "description": "一些常用的工具函数集合",
   "license": "MIT",
   "module": "dist/index.js",
@@ -22,8 +22,7 @@
     "prepublishOnly": "father doctor && npm run build",
     "pub": "npm publish --registry=https://registry.npmjs.org/.",
     "release": "release-it --ci",
-    "start": "npm run dev",
-    "tag": "standard-version"
+    "start": "npm run dev"
   },
   "commitlint": {
     "extends": [
@@ -59,7 +58,6 @@
     "js-cookie": "^3.0.5",
     "lodash": "^4.17.21",
     "nanoid": "^4.0.2",
-    "standard-version": "^9.5.0",
     "vconsole": "^3.15.1",
     "xlsx": "^0.18.5"
   },
