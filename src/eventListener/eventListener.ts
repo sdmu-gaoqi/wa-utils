@@ -7,6 +7,8 @@ export function on<T extends Window | Document | HTMLElement | EventTarget>(
     obj.addEventListener(
       ...(args as Parameters<HTMLElement['addEventListener']>),
     );
+  } else {
+    console.log('dom不存在 事件创建失败');
   }
 }
 
@@ -21,5 +23,7 @@ export function off<T extends Window | Document | HTMLElement | EventTarget>(
     obj.removeEventListener(
       ...(args as Parameters<HTMLElement['removeEventListener']>),
     );
+  } else {
+    console.log('dom不存在 事件注销失败');
   }
 }

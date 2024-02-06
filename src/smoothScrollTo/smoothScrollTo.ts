@@ -1,4 +1,4 @@
-interface SmoothScrollToOptions {
+export interface SmoothScrollToOptions {
   duration?: number;
   isHorizontal?: boolean;
   target?: any;

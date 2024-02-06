@@ -1,22 +1,10 @@
 ---
 hero:
   title: library
-  description: A react library developed with dumi
+  description: 一个工具函数的集合包
   actions:
-    - text: Hello
-      link: /
-    - text: World
-      link: /
-features:
-  - title: Hello
-    emoji: 💎
-    description: Put hello description here
-  - title: World
-    emoji: 🌈
-    description: Put world description here
-  - title: '!'
-    emoji: 🚀
-    description: Put ! description here
+    - text: 如何使用
+      link: /guide
+    - text: API
+      link: /components/audio
 ---
-
-waUtils

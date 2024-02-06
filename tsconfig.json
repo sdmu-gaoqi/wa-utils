@@ -9,7 +9,8 @@
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "waUtils": ["src"],
-      "waUtils/*": ["src/*", "*"]
+      "waUtils/*": ["src/*", "*"],
+      "wa-utils": ["src"]
     }
   },
   "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "global.d.ts"]

@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
 
-interface ScriptOption {
+export interface ScriptOption {
   src: string;
   innerHTML?: string;
   type?: HTMLScriptElement['type'];
@@ -11,7 +11,7 @@ interface ScriptOption {
   defer?: boolean;
 }
 
-interface styleOption {
+export interface styleOption {
   css: string;
   id: string;
 }

@@ -1,4 +1,4 @@
-import safeJson from 'waUtils/safeJson/safeJson';
+import { safeJson } from '../index';
 
 class _Storage {
   storage: Storage;
@@ -6,7 +6,7 @@ class _Storage {
 
   constructor(type: 'session' | 'local', limit?: number) {
     this.storage = type === 'session' ? sessionStorage : localStorage;
-    this.limit = -1;
+    this.limit = 220752000000;
     if (limit) {
       this.limit = limit;
     }
