@@ -2,7 +2,7 @@ name: Publish Package to npmjs
 
 on:
   pull_request:
-    branches: [test]
+    branches: [master]
 
 # 使用正式版本测一下
 jobs:
