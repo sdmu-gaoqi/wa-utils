@@ -6,7 +6,8 @@
   "git": {
     "commitMessage": "chore: Release v${version}",
     "commit": true,
-    "push": true
+    "push": true,
+    "tag": false
   },
   "npm": {
     "publish": true,
