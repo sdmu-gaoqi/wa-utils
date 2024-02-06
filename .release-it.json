@@ -4,7 +4,7 @@
     "tokenRef": "GITHUB_TOKEN"
   },
   "git": {
-    "commitMessage": "release v${version}",
+    "commitMessage": "feat: v${version}",
     "commit": true,
     "push": true
   },
