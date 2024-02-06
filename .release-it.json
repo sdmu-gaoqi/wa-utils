@@ -4,9 +4,10 @@
     "tokenRef": "GITHUB_TOKEN"
   },
   "git": {
-    "commitMessage": "feat: v${version}",
+    "commitMessage": "release v${version}",
     "commit": true,
-    "push": true
+    "push": true,
+    "tag": false
   },
   "npm": {
     "publish": true,
