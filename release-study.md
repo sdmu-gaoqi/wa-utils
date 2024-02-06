@@ -3,7 +3,7 @@
 1. git cz
 2. 完善 breakChange
 3. git push
-4. 提交 pull_request 到 yml 配置的 branch 触发自动 relase 作业
+4. 提交 pull_request 到 yml 配置的 branch 触发自动 relase 作业 需要满足 release: <版本号>触发
 
 # 遇到的阻塞问题
 
