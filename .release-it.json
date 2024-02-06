@@ -10,7 +10,7 @@
     "tag": false
   },
   "npm": {
-    "publish": false,
+    "publish": true,
     "ignoreVersion": false
   },
   "hooks": {
