@@ -5,7 +5,7 @@ group:
   title: 工具函数
 ---
 
-# createFileHash <Badge>v2.5.45</Badge>
+# createFileHash
 
 通过`web worker`给文件生成唯一 id， 中后台上传使用
 
