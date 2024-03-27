@@ -40,6 +40,7 @@ export { default as registerPageHidden } from './page-hidden';
 export { default as regexs } from './regex/regex';
 export { default as ResizeListener } from './resizeObserver/resizeObserver';
 export { default as safeJson } from './safeJson/safeJson';
+export { default as ScrollIntersection } from './scrollIntersection';
 export { default as sleep } from './sleep/sleep';
 export { default as smoothScrollTo } from './smoothScrollTo/smoothScrollTo';
 export type { SmoothScrollToOptions } from './smoothScrollTo/smoothScrollTo';
