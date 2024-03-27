@@ -14,10 +14,12 @@ class ScrollIntersection {
 
       const target = els?.[0]?.target;
       const id = target?.getAttribute('data-scroll-id');
-      this.notice?.(Number(id) || 0);
+      if (els?.[0]?.intersectionRatio > 0) {
+        this.notice?.(Number(id) || 0);
+      }
     },
     {
-      threshold: [0.01, 0.25, 0.5, 0.75, 1],
+      threshold: [0.25, 0.5, 0.75, 1],
     },
   );
 
