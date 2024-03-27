@@ -1,3 +1,13 @@
+## [4.0.1](https://github.com/sdmu-gaoqi/wa-utils/compare/4.0.0...null) (2024-03-27)
+
+### chore
+
+- 🤖 添加两个新 api ([4e9a19b](https://github.com/sdmu-gaoqi/wa-utils/commit/4e9a19be91f3ecfa53deff4dae53f9c799c7e78f))
+
+### BREAKING CHANGES
+
+- 🧨 添加 getImgSize 获取 url 资源与 File 图片尺寸宽高信息 添加 scrollIntersection 滚动监听
+
 ## 3.0.1 (2024-02-28)
 
 ### chore
