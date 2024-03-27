@@ -28,7 +28,7 @@ export { default as formatString } from './format-string';
 export { formatDiscount, formatMoney } from './format/format';
 export { default as fullscreen } from './fullscreen/fullscreen';
 export { default as getSign } from './get-sign';
-export { default as getImgSize } from './getImgSize';
+export { default as getImgSize, type ImgSizeData } from './getImgSize';
 export { default as IFrame } from './iframe';
 export { injectionScript, injectionStyle } from './injection/injection';
 export type { ScriptOption, styleOption } from './injection/injection';

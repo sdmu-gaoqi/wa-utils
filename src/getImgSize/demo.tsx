@@ -1,5 +1,5 @@
-import { getImgSize, type ImgSizeData } from '@diezhi/pal';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { getImgSize, type ImgSizeData } from 'wa-utils';
 
 const Demo = () => {
   const src = 'https://assets.papegames.com/resources/cdn/a4fca43655627be4.png';
