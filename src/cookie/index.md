@@ -1,23 +1,32 @@
 ---
 title: cookie
 toc: false
-order: -1
 group:
   title: 浏览器
 ---
 
-# cookie - cookie 操作
+# cookie
+
+`cookie` 操作 用法参考 `js-cookie`
+
+https://www.npmjs.com/package/js-cookie
+
+## 示例
+
+### 简单使用
 
 ```typescript
-// 用法参考js-cookie
-/**
- * @see https://www.npmjs.com/package/js-cookie
- */
 import { cookie } from 'wa-utils';
 
-cokkie.get('key');
-cookie.set('key', 'key');
-cookie.remove('key');
+cookie.set('token', 'xxxxxx');
+cookie.get('token');
+cookie.remove('token');
+```
+
+### 设置过期时间
+
+```typescript
+import { cookie } from 'wa-utils';
 // expires 从现在起 7天后过期
 cookie.set('foo', 'bar', { expires: 7 });
 

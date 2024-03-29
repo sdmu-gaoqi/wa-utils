@@ -21,7 +21,10 @@ export { default as createFileHash } from './createFileHash';
 export { default as debug } from './debug/debug';
 export { default as download } from './download';
 export { off, on } from './eventListener/eventListener';
-export { default as eventemitter } from './eventemitter/eventemitter';
+export {
+  EventEmitter,
+  default as eventemitter,
+} from './eventemitter/eventemitter';
 export { default as fileOpts } from './file/file';
 export { default as formatPercent } from './format-percent';
 export { default as formatString } from './format-string';
