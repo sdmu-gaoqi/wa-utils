@@ -6,7 +6,11 @@ group:
   title: 工具函数
 ---
 
-# ResizeListener 元素改变监听器
+# ResizeListener
+
+监听目标元素的尺寸变化
+
+### 如何使用
 
 ```typescript
 import { ResizeListener } from 'wa-utils';
@@ -21,9 +25,11 @@ const resizable = new ResizeListener();
  */
 resizable.on(document.body, (data) => {
   const { contentRect } = data?.[0];
-  console.lof(contentRect);
+  console.log(contentRect);
 });
 
 // 结束监听
 resizable.off();
 ```
+
+<code src='./demo.tsx'></code>

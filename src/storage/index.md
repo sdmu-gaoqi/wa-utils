@@ -6,7 +6,11 @@ group:
   title: 浏览器
 ---
 
-# Storage 更方便的 storage 操作 自带时间戳标识
+# Storage
+
+更方便的 `storage` 操作 自带时间戳标识
+
+### 如何使用
 
 ```typescript
 import { Storage } from 'wa-utils';

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { getImgSize, type ImgSizeData } from 'wa-utils';
 
 const Demo = () => {
-  const src = 'https://assets.papegames.com/resources/cdn/a4fca43655627be4.png';
+  const src =
+    'https://img-space.30sche.com/202101/11/97490da315abb0b1867d11ad47b31e1b66670.png?imageView2/2/w/900/h/0';
   const [imgData, setImgData] = useState<ImgSizeData>();
   const [fileImgData, setFileImgData] = useState<ImgSizeData>();
   const [filesImgData, setFilesImgData] = useState<ImgSizeData[]>();

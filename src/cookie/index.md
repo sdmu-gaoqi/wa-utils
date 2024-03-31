@@ -11,7 +11,7 @@ group:
 
 https://www.npmjs.com/package/js-cookie
 
-## 示例
+### 如何使用
 
 ### 简单使用
 

@@ -6,7 +6,11 @@ group:
   title: 浏览器
 ---
 
-# smoothScrollTo 以更平滑的方式滚动元素
+# smoothScrollTo
+
+使 `scrollTo` 以平滑的方式滚动
+
+### 如何使用
 
 ```typescript
 import { smoothScrollTo } from 'wa-utils';
@@ -19,4 +23,4 @@ import { smoothScrollTo } from 'wa-utils';
 smoothScrollTo();
 ```
 
-<code src="./demo.tsx" inline></code>
+<code src="./demo.tsx"></code>

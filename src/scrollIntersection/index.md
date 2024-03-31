@@ -6,19 +6,25 @@ group:
   title: 工具函数
 ---
 
-# ScrollIntersection 滚动监听
+# ScrollIntersection
+
+对目标元素进行滚动监听,并返回当前滚动视图在第几个 `children` 下
+
+### 如何使用
 
 ```typescript
-import { ResizeListener } from 'wa-utils';
+import { ScrollIntersection } from 'wa-utils';
 
-const resizeListener = new ResizeListener();
+const scrollIntersection = new ScrollIntersection();
 
-resizeListener.init(document.body, {
+scrollIntersection.init(document.body, {
   notice: (index) => {
     console.log(index);
   },
 });
 
 // 结束监听
-resizeListener.remove();
+scrollIntersection.remove();
 ```
+
+<code src="./demo.tsx"></code>

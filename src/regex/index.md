@@ -6,7 +6,9 @@ group:
   title: 正则工具
 ---
 
-# regexs 常用正则
+# regexs
+
+常用正则
 
 ```typescript
 import { regexs } from 'wa-utils';

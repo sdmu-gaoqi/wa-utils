@@ -9,7 +9,7 @@ group:
 
 基于 contentWindow 实现的 iframe 通信方案
 
-## 示例
+### 如何使用
 
 ### API
 

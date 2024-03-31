@@ -11,7 +11,7 @@ group:
 
 基于 `copy-to-clipboard` 封装 [copy-to-clipboard](https://www.npmjs.com/package/copy-to-clipboard)
 
-## 示例
+### 如何使用
 
 ```typescript
 import { copy } from 'wa-utils';

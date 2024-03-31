@@ -16,7 +16,7 @@ const Demo = () => {
       />
       <br />
 
-      <p>转换后的值:{base64.encode(baseValue)}</p>
+      <p>转换后的值:{base64.decode(baseValue)}</p>
       <input
         placeholder="请输入base4"
         value={baseValue}

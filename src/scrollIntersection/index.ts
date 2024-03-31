@@ -1,25 +1,27 @@
+import { debounce } from 'wa-utils';
+
 class ScrollIntersection {
   public dom: Element | null = null;
   public notice: ((data: number) => void) | null = null;
 
   private intersectionObserver: IntersectionObserver = new IntersectionObserver(
-    (entries) => {
+    debounce((entries) => {
       const els = entries
-        .map((item, index) => {
+        .map((item: any, index: number) => {
           return Object.assign(item, {
             sort: index + item?.intersectionRatio,
           });
         })
-        .sort((a, b) => b.sort - a.sort);
+        .sort((a: any, b: any) => b.sort - a.sort);
 
       const target = els?.[0]?.target;
       const id = target?.getAttribute('data-scroll-id');
-      if (els?.[0]?.intersectionRatio > 0) {
+      if (els?.[0]?.intersectionRatio > 0.5) {
         this.notice?.(Number(id) || 0);
       }
-    },
+    }, 500),
     {
-      threshold: [0.25, 0.5, 0.75, 1],
+      threshold: Array.from({ length: 10 }).map((_, index) => (index + 1) / 10),
     },
   );
 

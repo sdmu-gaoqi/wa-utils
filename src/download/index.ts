@@ -76,7 +76,7 @@ const downloadExcel = (
 
   const sheetName = 'Sheet';
   workbook.SheetNames.push(sheetName);
-  const worksheet = XLSX.utils.aoa_to_sheet([data.header, ...data.content]);
+  const worksheet = XLSX.utils.aoa_to_sheet([data.header, data.content]);
   workbook.Sheets[sheetName] = worksheet;
   console.log(workbook, 'worksheet');
 
@@ -109,7 +109,7 @@ const downloadCsv = (
   };
 
   const sheetName = 'Sheet';
-  const worksheet = XLSX.utils.aoa_to_sheet([data.header, ...data.content]);
+  const worksheet = XLSX.utils.aoa_to_sheet([data.header, data.content]);
 
   XLSX.utils.book_append_sheet(workbook, worksheet, sheetName);
 

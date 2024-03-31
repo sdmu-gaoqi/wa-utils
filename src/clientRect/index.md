@@ -10,7 +10,7 @@ group:
 
 获取 `dom` 在页面中的位置信息
 
-## 示例
+### 如何使用
 
 <code src="./demo/index.tsx"></code>
 

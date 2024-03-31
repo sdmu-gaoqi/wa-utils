@@ -6,7 +6,9 @@ group:
   title: 浏览器
 ---
 
-# fullscreen 全屏函数
+# fullscreen
+
+全屏/退出全屏
 
 ```typescript
 import { fullscreen } from 'wa-utils';

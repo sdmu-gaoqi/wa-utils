@@ -12,7 +12,7 @@ group:
 
 ## 如何使用
 
-<code src="./demo.tsx" inline></code>
+<code src="./demo.tsx"></code>
 
 ## API
 
