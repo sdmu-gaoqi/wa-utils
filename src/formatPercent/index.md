@@ -5,9 +5,11 @@ group:
   title: 数据处理
 ---
 
-值转换为百分数表示
+# formatPercent
 
-## 示例
+百分比展示数值
+
+### 如何使用
 
 ```ts
 import { formatPercent } from 'wa-utils';

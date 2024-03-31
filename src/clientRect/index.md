@@ -6,8 +6,27 @@ group:
   title: 浏览器
 ---
 
-# clientRect - 获取位置信息
+# clientRect
 
-## 示例
+获取 `dom` 在页面中的位置信息
+
+### 如何使用
 
 <code src="./demo/index.tsx"></code>
+
+## 如何使用
+
+```typescript
+import { clientRect } from 'wa-utils';
+
+const boxPosition = clientRect(document.querySelecor('#id'));
+```
+
+## 返回值
+
+```typescript
+type Response = Record<
+  'bottom' | 'height' | 'left' | 'right' | 'top' | 'width' | 'x' | 'y',
+  number
+>;
+```

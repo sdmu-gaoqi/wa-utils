@@ -1,16 +1,20 @@
 ---
-title: createFileHash
+title: getFileId
 toc: false
 group:
-  title: 工具函数
+  title: 文件相关
 ---
 
-# createFileHash
+# getFileId
 
-通过`web worker`给文件生成唯一 id， 中后台上传使用
+### 如何使用
+
+根据文件`hash`值通过`web worker`给文件生成唯一 id
 
 ```ts
-import { createFileHash } from 'wa-utils';
+import { getFileId } from 'wa-utils';
 
-const id = await createFileHash(file);
+const fileId = await getFileId(file);
 ```
+
+<code src='./demo.tsx'></code>

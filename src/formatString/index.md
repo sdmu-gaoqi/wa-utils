@@ -5,11 +5,13 @@ group:
   title: 数据处理
 ---
 
-# formatString - 字符串格式化
+# formatString -
+
+字符串格式化
 
 字符串格式化，会自动将空值转化为空字符串，避免渲染出`undefined`等。同时提供了一些可选的过滤项。
 
-## 示例
+### 如何使用
 
 ```ts
 import { formatString } from 'wa-utils';

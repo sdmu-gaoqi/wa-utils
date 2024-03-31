@@ -3,10 +3,12 @@ title: fileOpts
 toc: false
 order: -1
 group:
-  title: 数据处理
+  title: 文件相关
 ---
 
-# fileOpts 文件相关操作
+# fileOpts
+
+文件 `File`、`bolb`、`bsae64` 互转,与获取文件名、文件类型
 
 ```typescript
 import { fileOpts } from 'wa-utils';

@@ -6,5 +6,5 @@ hero:
     - text: 如何使用
       link: /guide
     - text: API
-      link: /components/audio
+      link: /components/event-listener
 ---

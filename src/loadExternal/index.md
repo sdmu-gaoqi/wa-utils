@@ -6,11 +6,13 @@ group:
   title: 浏览器
 ---
 
-# loadExternal - 资源加载
+# loadExternal
+
+资源加载
 
 加载外部 js/css 资源辅助函数, 多次加载只生效一次
 
-## 示例
+### 如何使用
 
 ### API
 

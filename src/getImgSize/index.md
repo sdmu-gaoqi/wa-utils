@@ -8,9 +8,7 @@ group:
 
 从远程资源或 `File` 文件中获取图片尺寸、内存大小信息
 
-<code src="./demo.tsx"></code>
-
-# 如何使用
+### 如何使用
 
 ```typescript
 import { getImgSize } from '@diezhi/pal';
@@ -36,3 +34,5 @@ getImgSize([File, File]).then((sizes) => {
   console.log(sizes);
 });
 ```
+
+<code src="./demo.tsx"></code>

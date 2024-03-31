@@ -1,4 +1,4 @@
-import isNumber from '../is-number';
+import isNumber from '../isNumber';
 
 /**
  * 将值转换为百分数

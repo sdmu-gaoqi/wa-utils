@@ -1,4 +1,4 @@
-export default function convertImgColor(
+export default function modifyImgColor(
   src: string,
   {
     red,
