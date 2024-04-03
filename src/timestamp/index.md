@@ -6,7 +6,9 @@ group:
   title: 工具函数
 ---
 
-# timestamp 常用时间戳数值
+# timestamp
+
+常用时间戳数值
 
 ```typescript
 import { timestamp } from 'wa-utils';

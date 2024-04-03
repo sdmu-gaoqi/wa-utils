@@ -6,15 +6,22 @@ group:
   title: 浏览器
 ---
 
-# openTab 内置了小屏幕打开 tab 的操作
+# openTab
+
+默认小窗口打开新视图
+
+### 如何使用
 
 ```typescript
 import { openTab } from 'wa-utils';
 
-/**
- * @param {{ url: strin; tagType: 'default' | 'small' }} props
- * */
 openTab();
 ```
 
-<code src="./demo.tsx" inline></code>
+### API
+
+```typescript
+type OpenTab = ({ url: string, tagType: 'default' | 'small' }) => void
+```
+
+<code src="./demo.tsx"></code>

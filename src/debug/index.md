@@ -6,8 +6,10 @@ group:
   title: 浏览器
 ---
 
-# debug - 调试工具
+# debug
 
-## 示例
+调试工具
+
+### 如何使用
 
 <code src="./demo/index.tsx"></code>

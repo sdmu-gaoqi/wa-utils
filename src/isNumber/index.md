@@ -6,11 +6,11 @@ group:
   title: 验证函数
 ---
 
-# isNumber - 判断数据类型
+# isNumber
 
 判断是否为有效数字
 
-## 示例
+### 如何使用
 
 ```ts
 import { isNumber } from 'wa-utils';
