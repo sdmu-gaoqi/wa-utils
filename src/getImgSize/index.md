@@ -11,7 +11,7 @@ group:
 ### 如何使用
 
 ```typescript
-import { getImgSize } from '@diezhi/pal';
+import { getImgSize } from 'wa-utils';
 
 // 单个图片地址或多个图片地址
 getImgSize('https://t7.baidu.com/it/u=839828294,1619278046&fm=193&f=GIF').then(
