@@ -20,5 +20,5 @@ export const formatDiscount = (value: number) => {
   if (!Number(value)) {
     return '';
   }
-  return `${(Number(value) / 10).toFixed(1)}折`;
+  return `${(Number(value) * 10).toFixed(1)}折`;
 };
