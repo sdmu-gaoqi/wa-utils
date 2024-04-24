@@ -8,10 +8,20 @@ export const formatMoney = (value: number, decimal = 2, thousands = false) => {
   if (!Number(value)) {
     return 0;
   } else {
-    const formattedValue = Number(value).toLocaleString();
-    const decimalStr = `.${'0'.repeat(decimal)}`;
+    let formattedValue = Number(value).toLocaleString();
+    let decimalStr = formattedValue?.split('.')[1] || '00';
+    formattedValue = formattedValue?.split('.')[0] || '0';
+    if (decimalStr) {
+      if (decimalStr?.length < decimal) {
+        const joinLength = decimal - decimalStr?.length;
+        decimalStr += '0'.repeat(joinLength);
+      } else {
+        decimalStr = decimalStr.slice(0, decimal);
+      }
+    }
+    decimalStr = decimalStr ? `.${decimalStr}` : '';
     return !thousands
-      ? `${Number(value)}${decimalStr}`
+      ? `${Number(String(value)?.split('.')?.[0])}${decimalStr}`
       : `${formattedValue}${decimalStr}`;
   }
 };
