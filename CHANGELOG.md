@@ -1,3 +1,6 @@
+- Merge pull request #160 from sdmu-gaoqi:v1 (cff7a04)
+- chore: 🤖 修复了 formatMoney,添加一个 hook (a2135a9)
+
 ## [5.0.1](https://github.com/sdmu-gaoqi/wa-utils/compare/5.0.0...null) (2024-04-19)
 
 ## [4.0.1](https://github.com/sdmu-gaoqi/wa-utils/compare/4.0.0...null) (2024-03-27)
